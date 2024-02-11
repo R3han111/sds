@@ -1,0 +1,606 @@
+Main page code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dormy House</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e1e2eb;
+    }
+
+    header {
+      background-color: #e1e2eb;
+      color: #1870aa;
+      padding: 02px;
+      margin: 0px;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #navbar1 {
+            background-color: #1870aa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #navbar1 a {
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin: 0 10px;
+        }
+   
+    #navbar2 {
+            background-color: #f3f3f3;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #ffffff;
+        }
+        #navbar2 a {
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin: 0 15px;
+        }
+        #search-bar {
+            width: 500px; 
+            height: 10px;
+        padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .category-text {
+        text-align: center;
+        margin: 10px 0;
+        color: #1870aa;
+        font-family: 'TradaSans Dami', sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            padding:10px;
+        }
+       
+
+
+        .image-container img {
+            max-width: 25%; 
+            height: auto;
+            margin-right: 150px;
+        }
+        
+        video {
+            width: 100%; /* Make the video fill the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0px; /* Center the video horizontally */
+        }
+       
+    main {
+      padding: 0px;
+    }
+
+    .product {
+      
+      padding: 0px;
+      margin: 20px;
+      background-color: #e1e2eb;
+    }
+
+    .product img {
+     max-width: 100%;
+      height: auto;
+    }
+
+    .cart {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .banner-container{
+      width: 100%;
+      height: 550px;
+    }
+
+    .banner-image{
+      width: 65%;
+      float: left;
+
+
+    }
+
+    .banner-text{
+      width: 35%;
+      height: 82%;
+      color: rgb(22, 21, 21);
+      font-size: larger;
+      float: left;
+      border: 0;
+      margin-top: 0;
+      background-color: rgb(226, 237, 243);
+    }
+
+    .search-icon-container{
+      position: absolute;
+    top: 25.5%;
+    left: 64%;
+    }
+
+    .product-name{
+      text-align: center;
+    }
+    .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            font-size: 2em;
+            color: #888;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .star-rating input:checked ~ label,
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #f8d301; /* Change color on hover and for checked stars */
+        }
+    .banner-text2{
+      width: 100%;
+      height: 100%;
+      color: rgb(226, 214, 214);
+      font-size: larger;
+      float: left;
+      border: 0;
+      margin-top: 0;
+      background-color: rgb(23, 63, 41);
+    }
+    
+
+    footer {
+      background-color: #3c48b4;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .productLink {
+      text-decoration: none; 
+      color: black;
+
+    }
+
+
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Dormy House</h1>
+  </header>
+  
+  <div id="navbar1">
+    <nav>
+      <a>Free Shipping & Installation in Karachi, Lahore, Islamabad & Rawalpindi on All Online Orders</a>
+    </nav>
+  </div>
+  <nav>
+  <div class="nav-address border  ">
+    <div class="navbar2">
+      <div id="navbar2">
+        <input type="text" id="search-bar" placeholder="Search...">
+
+        <button id="search-button">Search</button>
+        <div class="search-icon-container">
+       <img src="search-icon.png" height="16" width="18" />
+      </div>
+    </div> 
+    
+     <img src="file:///C:/Users/Mirza%20Rehan%20Traiq/Downloads/Screenshot%202024-01-08%20000453.png" width="1350" height="550"alt= "Product 1">
+    </div>
+  </nav>
+  <div class="category-text">
+    <h1>Shop by Category</h1>
+  </div>
+
+  <main>
+    <div class="image-container">
+    <div class="product">
+      <a class="productLink" href="./sofa-set.html">
+      <img src="c:\Users\Mirza Rehan Traiq\Downloads\zzzzzzz.webp" width="400" height="300"alt= "Product 1">
+ 
+      <h2 class="product-name">Sofa Set</h2>
+ </a>
+    </div>
+
+    <div class="product">
+      <a class="productLink" href="file:///C:/Users/Mirza%20Rehan%20Traiq/Downloads/sofa-set/bedset.html">
+      <img src="https://fatimafurniture.ae/wp-content/uploads/2022/11/4-Piece-Upholstered-Bedroom-Set-in-Grey-4.jpg"width="400" height="300" alt="Product 2">
+      <h2 class="product-name">Bed Set</h2>
+</a>
+    </div>
+
+    <div class="product">
+      <a class="productLink" href="file:///C:/Users/Mirza%20Rehan%20Traiq/Downloads/sofa-set/diningset.html">
+        <img src="https://woodc.pk/wp-content/uploads/2023/05/ijqijnd.jpg"width="400" height="300" alt="Product 2">
+        <h2 class="product-name">Dining Table Set</h2>
+      </a>
+      </div>
+</div>
+
+
+
+<div class="banner-container">
+  <div class="banner-image">
+    <img width="900" height="450" src="https://interwood.pk/cdn/shop/files/1250x550-3_1250x550_crop_center.jpg?v=1694495140" alt="Your Image">
+  </div>
+  
+  <div class="banner-text">
+    <h1><pre>    Add Contemporary 
+    Style and Comfort 
+    with our Lodge
+    Sofa Set</pre></h1>
+    <h3><pre>       Enhance your interior with the chic 
+       and captivating design  of our 
+       lodge sofa. Combining comtemporary
+       design with velvety comfort,
+       Lodge fuses charm, Luxury,
+       and functionality into one 
+       striking piece that instantly
+       uplifts any interior </pre></h3>
+</div>
+<div class="banner-text2">
+<pre style="font-size:2.3em; font-weight: bold; ">                  We take pride in our work and our 
+                  customer testimonial reflect that </pre>
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">&#9733;</label>
+                </div>
+
+<pre style="font-size: 1.3em;font-weight: bold;">
+
+                                     "I had a great experience shopping with Interwood. 
+                                  The shopping experience was a breeze and the service was
+                                     excellent. I made the payment online and Interwood 
+                                      delivered the table on time. As per their promise,
+                                    their team came the next day for fitting of the table. 
+                                                       Great service."
+                                                      
+                                                       
+                                                        Waqas Ashraf</pre>
+</div>
+
+<video controls poster="video-thumbnail.jpg">
+  <!-- Replace "your-video.mp4" with the actual path or URL of your video file -->
+  <source src="c:\Users\Mirza Rehan Traiq\Downloads\production_id_5095290 (720p).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 The Dormy House. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+=======================================================================================
+Categories next pages code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofa Set</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #ffffff;
+      color: #1870aa;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      font-weight: bold;
+    }
+    #navbar {
+            background-color: #1870aa;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        #navbar a {
+            color: #f8f1f1;
+            text-align: center;
+            font-size: x-large;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .banner-image{
+            padding: 60px;
+      width: 45%;
+      float: left;
+    }
+    .banner-text{
+        padding: 30px;
+      width: 35%;
+      height: 82%;
+      color: rgb(23, 63, 41);
+      font-size: xx-large;
+      font-weight: bolder;
+      float: left;
+      border: 0;
+      margin-top: 0;
+      background-color: #ffffff;
+    }
+    .add-to-cart {
+      display: flex;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .add-to-cart select {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .add-to-cart button {
+        width: 350px;
+      padding: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #103a31;
+      color: #ffffff;
+
+
+    }
+    main {
+      padding: 0px;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <p>Free Shipping & Installation in Karachi, Lahore, Islamabad & Rawalpindi on All Online Orders</p>
+  </header>
+  <div id="navbar">
+    <nav>
+      <h1>The Dormy House</h1>
+    </nav>
+  </div>
+  <div class="banner-container">
+    <div class="banner-image">
+      <img width="600" height="450" src="https://interwood.pk/cdn/shop/products/chelsea_bed_brightness1_1_580x_crop_center.jpg?v=1687428680" alt="Your Image">
+    </div>
+    <div class="banner-text">
+        <pre> Chelsea King Size Wooden Bed Set
+ </pre>
+ <pre style="font-size: 0.6em;">  SKU:GP880000161
+  Deliver only in Karachi, Lahore, Islamabad, Rawalpindi
+  Delivery to other cities subject to additional charges
+ 
+  <div class="add-to-cart">
+      <label style="padding-top: 7%;" for="quantity">Quantity:</label>
+      <select id="quantity" name="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- Add more options as needed -->
+      </select>
+      <button type="submit">Add to Cart</button>
+  </div>
+
+        </div>
+        
+=================================================================
+Checkout code 
+Html code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dormy House</title>
+  <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+  <body>
+   <header>
+    <div class="container">
+        <div class="left">
+            <h3>BILLING ADDRESS</h3>
+            <form>
+                Full name 
+                <input type="text" name="" placeholder="Enter Your Full Name">
+Email
+<input type="text"name="" placeholder="Enter Email">
+Address
+<input type="text"name="" placeholder="Enter Your Address">
+City
+<input type="text"name="" placeholder="Enter Your City">
+            </form>
+            
+            <div class="right"></div>
+            <div id="zip">
+                <label>
+                    state 
+                    <select>
+                        <option>Choose State..</option>
+                        <option>Islamabad..</option>
+                        <option>Punjab..</option>
+                        <option>KPK..</option>
+                        <option>Sindh..</option>
+                </label>
+                <label>
+                    Zip code 
+                    <input type="number" name="" placeholder="Zip Code">
+
+                </label>
+            </div>
+            </div>
+        </form>
+        <div class="right">
+            <h3>PAYMENT</h3>
+            <form>               
+Accepted Card
+<br>
+<img src="c:\Users\Mirza Rehan Traiq\Downloads\gatewayp\gatewayp\image\card1.png" width="100">
+<img src="c:\Users\Mirza Rehan Traiq\Downloads\gatewayp\gatewayp\image\card2.png" width="50">
+<br><br>
+Credit Card Number
+<input type="text"name="" placeholder="Enter Card number">
+Exp Month
+<input type="text"name="" placeholder="Enter Month">
+<label>
+    Exp Year
+    <select>
+        <option>Choose Year..</option>
+        <option>2022..</option>
+        <option>2023..</option>
+        <option>2024..</option>
+        <option>2025..</option>
+    </select>
+</label>  
+<br>
+<label>
+    CVV
+                    <input type="number" name="" placeholder="CVV">
+</label>     
+</form>
+<input type="submit" name="" value="Proceed to Checkout">
+</div>
+</div>
+</header>
+</body>
+</html>
+
+            
+            
+   </header>
+
+
+  </body>
+
+CSS CODE
+
+*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
+header{
+	width: 100vw;
+	min-height: 100vh;
+	background: #34495e;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	background: white;
+	max-width: 800px;
+	min-height: 500px;
+	display: flex;
+	justify-content:space-between;
+	align-items: flex-start;
+	padding: 0.5rem 1.5rem;
+}
+.left{
+	flex-basis: 50%;
+}
+.right{
+	flex-basis: 50%;
+}
+form{
+	padding: 1rem;
+}
+h3{
+	margin-top: 1rem;
+	color:#2c3e50;
+	}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 0.5rem 0.7rem;
+	margin: 0.5rem 0;
+	outline: none;
+}
+#zip{
+	display: flex;
+	margin-top: 0.5rem;
+}
+#zip select{
+	padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+	padding: 0.5rem 0.7rem;
+	margin-left: 5px;	
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 0.7rem 1.5rem;
+	background: #34495e;
+	color: white;
+	border: none;
+	outline: none;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #2c3e50;
+}
+
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+
